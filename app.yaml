@@ -1,4 +1,4 @@
 ---
 kind: wasmer.io/App.v0
-name: wcgi-php-starter
+name: wcgi-php-starter-template
 package: wasmer/wcgi-php-template@0.1.3
