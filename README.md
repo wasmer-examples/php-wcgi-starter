@@ -1,7 +1,7 @@
 # WCGI Template for PHP
 
 This is a template project for creating a WCGI-compatible package that can be
-published to WAPM.
+published to Wasmer registry and also be deployed to Wasmer Edge.
 
 ## Getting Started
 
@@ -27,9 +27,19 @@ $ wasmer publish .
 You can also use `wasmer run-unstable` to test things locally.
 
 ```console
-$ wasmer run-unstable .
+$ wasmer run .
 INFO run: wasmer_wasix::runners::wcgi::runner: Starting the server address=127.0.0.1:8000 command_name="php"
 ```
+
+## Deploying to Wasmer Edge
+
+To deploy your package to Wasmer Edge
+
+```console
+$ wasmer deploy
+```
+
+> You will need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
 
 ## License
 
@@ -38,7 +48,7 @@ This project is licensed under either of
 - Apache License, Version 2.0, ([LICENSE-APACHE](./LICENSE-APACHE.md) or
   <http://www.apache.org/licenses/LICENSE-2.0>)
 - MIT license ([LICENSE-MIT](./LICENSE-MIT.md) or
-   <http://opensource.org/licenses/MIT>)
+  <http://opensource.org/licenses/MIT>)
 
 at your option.
 
@@ -50,4 +60,5 @@ license, shall be dual licensed as above, without any additional terms or
 conditions.
 
 [install]: https://docs.wasmer.io/ecosystem/wasmer/getting-started
+
 # wcgi-php-starter
