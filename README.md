@@ -8,13 +8,13 @@ Modify the logic of your the PHP application in the `app/index.php` file.
 $ echo '<?php print("Hello, World!"); ?>' > ./app/index.php
 ```
 
-You can things locally with:
+You can run things locally with:
 
 ```
 $ php -S app/index.php
 ```
 
-Or you can also use `wasmer run` to run things locally.
+Or you can also use `wasmer run`:
 
 ```console
 $ wasmer run . --net
@@ -26,7 +26,7 @@ $ wasmer run . --net
 
 ## Deploy on Wasmer Edge
 
-The easiest way to deploy your Python app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
+The easiest way to deploy your PHP app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
 Live example: http://wcgi-php-starter-template.wasmer.app/
 
