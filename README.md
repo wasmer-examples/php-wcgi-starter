@@ -1,64 +1,40 @@
-# WCGI Template for PHP
-
-This is a template project for creating a WCGI-compatible package that can be
-published to Wasmer registry and also be deployed to Wasmer Edge.
+This is a simple [PHP](https://php.org/) application template running using WCGI
 
 ## Getting Started
 
-To run this demo, you will need to install [the Wasmer toolchain][install].
-
-```console
-$ curl https://get.wasmer.io -sSfL | sh
-```
-
-Now, start writing your PHP code.
+Modify the logic of your the PHP application in the `app/index.php` file.
 
 ```console
 $ echo '<?php print("Hello, World!"); ?>' > ./app/index.php
 ```
 
-At this point, you would normally publish the package to WAPM.
+You can things locally with:
 
-```console
-$ wasmer login $MY_API_TOKEN
-$ wasmer publish .
+```
+$ php -S app/index.php
 ```
 
-You can also use `wasmer run-unstable` to test things locally.
+Or you can also use `wasmer run` to run things locally.
 
 ```console
-$ wasmer run .
-INFO run: wasmer_wasix::runners::wcgi::runner: Starting the server address=127.0.0.1:8000 command_name="php"
+$ wasmer run . --net
 ```
 
-## Deploying to Wasmer Edge
+> [!NOTE]
+> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
+> The `--net` flag is required to enable networking support in Wasmer.
 
-To deploy your package to Wasmer Edge
+## Deploy on Wasmer Edge
 
-```console
-$ wasmer deploy
+The easiest way to deploy your Python app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
+
+Live example: http://wcgi-php-starter-template.wasmer.app/
+
+Run this commmand to deploy to Wasmer Edge:
+
+```bash
+wasmer deploy
 ```
 
+> [!NOTE]
 > You will need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
-
-## License
-
-This project is licensed under either of
-
-- Apache License, Version 2.0, ([LICENSE-APACHE](./LICENSE-APACHE.md) or
-  <http://www.apache.org/licenses/LICENSE-2.0>)
-- MIT license ([LICENSE-MIT](./LICENSE-MIT.md) or
-  <http://opensource.org/licenses/MIT>)
-
-at your option.
-
-### Contribution
-
-Unless you explicitly state otherwise, any contribution intentionally
-submitted for inclusion in the work by you, as defined in the Apache-2.0
-license, shall be dual licensed as above, without any additional terms or
-conditions.
-
-[install]: https://docs.wasmer.io/ecosystem/wasmer/getting-started
-
-# wcgi-php-starter
