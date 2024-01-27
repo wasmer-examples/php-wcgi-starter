@@ -14,21 +14,22 @@ You can run things locally with:
 $ php -t app -S localhost:8080
 ```
 
-Or you can also use `wasmer run`:
+Or you can also use `wasmer run` to run it locally (check out the [Wasmer install guide](https://docs.wasmer.io/install)):
 
 ```console
 $ wasmer run . --net
 ```
 
-> [!NOTE]
-> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
-> The `--net` flag is required to enable networking support in Wasmer.
+
+> [!TIP]
+> You can also run `wasmer run wasmer-examples/php-wcgi-starter --net`to run the remote package
+
 
 ## Deploy on Wasmer Edge
 
 The easiest way to deploy your PHP app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
-Live example: http://wcgi-php-starter-template.wasmer.app/
+Live example: https://wcgi-php-starter-template.wasmer.app/
 
 Run this commmand to deploy to Wasmer Edge:
 
