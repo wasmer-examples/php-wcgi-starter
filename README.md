@@ -24,6 +24,8 @@ $ wasmer run . --net
 > [!TIP]
 > You can also run `wasmer run wasmer-examples/php-wcgi-starter --net`to run the remote package
 
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
+
 
 ## Deploy on Wasmer Edge
 
