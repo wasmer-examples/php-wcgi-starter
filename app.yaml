@@ -1,4 +1,6 @@
 ---
 kind: wasmer.io/App.v0
-name: wcgi-php-starter-template
-package: wasmer-examples/php-wcgi-starter
+name: my-unique-identifier-of-the-app-2342342
+owner: tiinyhost
+package: tiinyhost/my-unique-identifier-of-the-app-2342342
+alias: ["myphp.tiiny.io"]
