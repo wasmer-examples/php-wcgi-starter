@@ -5,6 +5,7 @@ description = "PHP website via WCGI starter package"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/wasmerio/wcgi-php-template"
+private = true
 
 [fs]
 app = "app"
